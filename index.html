@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว - Jiratchaya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .profile-card {
+            width: 900px;
+            max-width: 100%;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            display: flex;
+        }
+
+        /* ด้านซ้าย */
+        .profile-left {
+            width: 40%;
+            background: linear-gradient(160deg, #6a5acd, #9b59b6);
+            color: white;
+            text-align: center;
+            padding: 50px 25px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            margin-bottom: 20px;
+        }
+
+        .profile-left h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .profile-left p {
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        /* ด้านขวา */
+        .profile-right {
+            width: 60%;
+            padding: 45px;
+        }
+
+        .profile-right h2 {
+            color: #6a5acd;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .info {
+            margin-bottom: 25px;
+        }
+
+        .info p {
+            margin: 12px 0;
+            font-size: 17px;
+            color: #444;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill {
+            background: #eee8ff;
+            color: #6a5acd;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 30px;
+        }
+
+        .contact a {
+            display: inline-block;
+            text-decoration: none;
+            background: #6a5acd;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            background: #4b3ca7;
+            transform: translateY(-3px);
+        }
+
+        /* รองรับมือถือ */
+        @media (max-width: 700px) {
+            .profile-card {
+                flex-direction: column;
+            }
+
+            .profile-left,
+            .profile-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <!-- ส่วนโปรไฟล์ -->
+        <div class="profile-left">
+
+            <!-- เปลี่ยนรูปตรงนี้ -->
+            <img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/480387627_1312309439999733_1619381833361913_n.jpg?stp=dst-jpg_tt6&cstp=mx959x960&ctp=s959x960&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=itrA2AKfNCUQ7kNvwGd561Z&_nc_oc=Adru7CHih7XjT1Zb8UNLeYqIT_WrmqhCpb2NE3ej9IlwPKzsa6IDYuq4M6aGc9p5C04&_nc_zt=23&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=17nXw-3rFjti2SXqRuj1pw&_nc_ss=7b2a8&oh=00_AQNjAUWU2xUTSRnanj76PMvr8bpr9u74BHH5cPtY84jzKQ&oe=6ACB8AD4" class="profile-img" alt="รูปโปรไฟล์">
+
+            <h1>Jiratchaya</h1>
+            <p>นักศึกษาสาขาคอมพิวเตอร์และเทคโนโลยีดิจิทัล</p>
+
+        </div>
+
+
+        <!-- ข้อมูลแนะนำตัว -->
+        <div class="profile-right">
+
+            <h2>👋 สวัสดีค่ะ!</h2>
+
+            <div class="info">
+
+                <p><strong>ชื่อ:</strong> จิรัชญา</p>
+
+                <p><strong>สถานะ:</strong> นักศึกษา</p>
+
+                <p><strong>สาขา:</strong>
+                    คอมพิวเตอร์และเทคโนโลยีดิจิทัลเพื่อการศึกษา
+                </p>
+
+                <p><strong>ความสนใจ:</strong>
+                    เทคโนโลยี การออกแบบเว็บไซต์ AI และสื่อการเรียนรู้
+                </p>
+
+            </div>
+
+
+            <h2>💻 ทักษะที่สนใจ</h2>
+
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">AI</span>
+                <span class="skill">ออกแบบสื่อ</span>
+            </div>
+
+
+            <div class="contact">
+                <a href="mailto:example@gmail.com">
+                    📧 ติดต่อฉัน
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
